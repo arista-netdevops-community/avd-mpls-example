@@ -22,5 +22,5 @@ tfd-validate-state: ## Run ansible playbook to validate TFD MPLS ISIS-SR topolog
 	ansible-playbook tfd-validate-state.yml --skip-tags hardware
 
 .PHONY: tfd-validate-services
-tfd-validate-services: ## Run ansible playbook to deploy EVPN Fabric.
+tfd-validate-services: ## Run ansible playbook to validate TFD MPLS ISIS-SR Services
 	ansible-playbook tfd-validate-services.yml
