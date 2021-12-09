@@ -11,9 +11,9 @@
       eos_command:
         commands: "{{ item }}"
       loop:
-        - "show patch panel detail"
-        - "show ip route vrf TENANT_A_WAN"
-        - "show ip bgp summary vrf TENANT_A_WAN"
+        - "show patch panel detail | json"
+        - "show ip route vrf TENANT_A_WAN | json"
+        - "show ip bgp summary vrf TENANT_A_WAN | json"
       ignore_errors: true
       register: PE_01_state
 
@@ -34,9 +34,9 @@
       eos_command:
         commands: "{{ item }}"
       loop:
-        - "show patch panel detail"
-        - "show ip route vrf TENANT_A_WAN"
-        - "show ip bgp summary vrf TENANT_A_WAN"
+        - "show patch panel detail | json"
+        - "show ip route vrf TENANT_A_WAN | json"
+        - "show ip bgp summary vrf TENANT_A_WAN | json"
       ignore_errors: true
       register: PE_04_state
 

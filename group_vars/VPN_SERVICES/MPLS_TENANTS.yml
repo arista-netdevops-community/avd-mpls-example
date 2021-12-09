@@ -4,7 +4,7 @@
 #     pw_rt_base: 1000
 #     l1_services:
 #       - name: TEN_A_site1_site2_eline
-#         type: vpws-pseudowire  # Should be default
+#         type: vpws-pseudowire
 #         ids: [ 52, 513 ]
 #         nodes: ["PE-01", "PE-04"]
 #         interfaces: ["Ethernet5/2.10", "Ethernet5/3.10"]
@@ -45,4 +45,3 @@
 #             nodes: [ PE-04 ]
 #             default_originate:
 #               always: true
-

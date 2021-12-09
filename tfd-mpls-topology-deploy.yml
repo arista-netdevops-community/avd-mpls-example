@@ -1,5 +1,6 @@
 ---
-- name: Build Switch configuration
+
+- name: Build MPLS Topology configuration
   hosts: MPLS_FABRIC
   connection: local
   gather_facts: false

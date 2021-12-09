@@ -14,24 +14,24 @@
 
 | Total Tests | Total Tests Passed | Total Tests Failed |
 | ----------- | ------------------ | ------------------ |
-| 91 | 84 | 7 |
+| 91 | 90 | 1 |
 
 ### Summary Totals Devices Under Tests
 
 | DUT | Total Tests | Tests Passed | Tests Failed | Categories Failed |
 | --- | ----------- | ------------ | ------------ | ----------------- |
-| P-01 |  19 | 18 | 1 | NTP |
-| P-02 |  22 | 21 | 1 | NTP |
-| PE-01 |  12 | 11 | 1 | NTP |
-| PE-02 |  15 | 14 | 1 | NTP |
-| PE-03 |  11 | 10 | 1 | NTP |
-| PE-04 |  12 | 10 | 2 | NTP, Interface State |
+| P-01 |  19 | 19 | 0 | - |
+| P-02 |  22 | 22 | 0 | - |
+| PE-01 |  12 | 12 | 0 | - |
+| PE-02 |  15 | 15 | 0 | - |
+| PE-03 |  11 | 11 | 0 | - |
+| PE-04 |  12 | 11 | 1 | Interface State |
 
 ### Summary Totals Per Category
 
 | Test Category | Total Tests | Tests Passed | Tests Failed |
 | ------------- | ----------- | ------------ | ------------ |
-| NTP |  6 | 0 | 6 |
+| NTP |  6 | 6 | 0 |
 | Interface State |  27 | 26 | 1 |
 | LLDP Topology |  18 | 18 | 0 |
 | IP Reachability |  18 | 18 | 0 |
@@ -41,24 +41,18 @@
 
 | Test ID | Node | Test Category | Test Description | Test | Test Result | Failure Reason |
 | ------- | ---- | ------------- | ---------------- | ---- | ----------- | -------------- |
-| 1 | P-01 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
-| 2 | P-02 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
-| 3 | PE-01 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
-| 4 | PE-02 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
-| 5 | PE-03 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
-| 6 | PE-04 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
 | 27 | PE-04 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet5/1 -  | FAIL | interface status: down - line protocol status: down |
 
 ## All Test Results
 
 | Test ID | Node | Test Category | Test Description | Test | Test Result | Failure Reason |
 | ------- | ---- | ------------- | ---------------- | ---- | ----------- | -------------- |
-| 1 | P-01 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
-| 2 | P-02 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
-| 3 | PE-01 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
-| 4 | PE-02 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
-| 5 | PE-03 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
-| 6 | PE-04 | NTP | Synchronised with NTP server | NTP | FAIL | not synchronised to NTP server |
+| 1 | P-01 | NTP | Synchronised with NTP server | NTP | PASS |  |
+| 2 | P-02 | NTP | Synchronised with NTP server | NTP | PASS |  |
+| 3 | PE-01 | NTP | Synchronised with NTP server | NTP | PASS |  |
+| 4 | PE-02 | NTP | Synchronised with NTP server | NTP | PASS |  |
+| 5 | PE-03 | NTP | Synchronised with NTP server | NTP | PASS |  |
+| 6 | PE-04 | NTP | Synchronised with NTP server | NTP | PASS |  |
 | 7 | P-01 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet1/1 - P2P_LINK_TO_PE-01_Ethernet1/1 | PASS |  |
 | 8 | P-01 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet2/1 - P2P_LINK_TO_PE-02_Ethernet50/1 | PASS |  |
 | 9 | P-01 | Interface State | Ethernet Interface Status & Line Protocol == "up" | Ethernet25/1 - P2P_LINK_TO_P-02_Ethernet25/1 | PASS |  |
@@ -130,11 +124,11 @@
 | 75 | PE-04 | BGP | ArBGP is configured and operating | ArBGP | PASS |  |
 | 76 | P-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.1 | PASS |  |
 | 77 | P-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.2 | PASS |  |
-| 78 | P-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.3 | PASS |  |
+| 78 | P-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.8 | PASS |  |
 | 79 | P-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.4 | PASS |  |
 | 80 | P-02 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.1 | PASS |  |
 | 81 | P-02 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.2 | PASS |  |
-| 82 | P-02 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.3 | PASS |  |
+| 82 | P-02 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.8 | PASS |  |
 | 83 | P-02 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.4 | PASS |  |
 | 84 | PE-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.11 | PASS |  |
 | 85 | PE-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.12 | PASS |  |

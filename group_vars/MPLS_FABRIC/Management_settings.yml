@@ -33,16 +33,9 @@ ntp:
     name: "{{ mgmt_interface }}"
     vrf: "{{ mgmt_interface_vrf }}"
   servers:
-  - name: 172.22.22.50
+  - name: 0.north-america.pool.ntp.org
     preferred: True
     vrf: "{{ mgmt_interface_vrf }}"
-
-
-# internal_vlan_order:
-#   allocation: ascending
-#   range:
-#     beginning: 3700
-#     ending: 3900
 
 
 connected_endpoints_keys:
