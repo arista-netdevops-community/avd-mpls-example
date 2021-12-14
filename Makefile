@@ -11,7 +11,7 @@ help: ## Display help message (*: main entry points / []: part of an entry point
 
 .PHONY: tfd-topology-build
 tfd-topology-build: ## Run ansible playbook to build TFD MPLS ISIS-SR topology
-	ansible-playbook tfd-mpls-topology-deploy.yml --tags build,deploy
+	ansible-playbook tfd-mpls-topology-deploy.yml --tags build
 
 .PHONY: tfd-topology-deploy
 tfd-topology-deploy: ## Run ansible playbook to build and deploy TFD MPLS ISIS-SR topology
