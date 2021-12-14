@@ -124,11 +124,11 @@
 | 75 | PE-04 | BGP | ArBGP is configured and operating | ArBGP | PASS |  |
 | 76 | P-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.1 | PASS |  |
 | 77 | P-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.2 | PASS |  |
-| 78 | P-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.8 | PASS |  |
+| 78 | P-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.3 | PASS |  |
 | 79 | P-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.4 | PASS |  |
 | 80 | P-02 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.1 | PASS |  |
 | 81 | P-02 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.2 | PASS |  |
-| 82 | P-02 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.8 | PASS |  |
+| 82 | P-02 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.3 | PASS |  |
 | 83 | P-02 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.4 | PASS |  |
 | 84 | PE-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.11 | PASS |  |
 | 85 | PE-01 | BGP | bgp evpn peer state established (evpn) | bgp_neighbor: 100.70.0.12 | PASS |  |
