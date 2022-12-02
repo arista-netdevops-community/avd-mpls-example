@@ -30,7 +30,7 @@ dns_domain: sjc.aristanetworks.com
 
 ntp:
   local_interface:
-    name: "{{ mgmt_interface }}"
+    name: "{{ switch.mgmt_interface }}"
     vrf: "{{ mgmt_interface_vrf }}"
   servers:
   - name: 0.north-america.pool.ntp.org

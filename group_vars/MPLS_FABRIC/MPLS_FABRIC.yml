@@ -18,19 +18,19 @@ bgp_ecmp: 4
 # EVPN prevent readvertising routes
 overlay_prevent_readvertise_to_server: true
 
-underlay_routing_protocol: isis
+underlay_routing_protocol: isis-sr
 isis_advertise_passive_only: true
 # Disabling ISIS hello padding makes it easier with vEOS-lab.
-isis_hello_padding: false
+# isis_hello_padding: false
 isis_ti_lfa:
   enabled: true
   protection: link
   local_convergence_delay: 15000
 
-# What should the defaults be?
-isis_default_is_type: level-1-2
-isis_default_circuit_type: level-1-2
-isis_default_metric: 50
+# # What should the defaults be?
+# isis_default_is_type: level-1-2
+# isis_default_circuit_type: level-1-2
+# isis_default_metric: 50
 
 label_distribution:
   # protocol: ldp
@@ -44,10 +44,11 @@ bgp_as: 65000
 
 # bgp peer groups passwords
 bgp_peer_groups:
-  MPLS_OVERLAY_PEERS:
+  mpls_overlay_peers:
     password: $1c$U4tL2vQP9QwZlxIV1K3/pw==
 
 # Update p2p mtu
 p2p_uplinks_mtu: 9000
 
 
+ipv6_unicast_routing: true

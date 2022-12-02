@@ -10,6 +10,7 @@ pe:
     backbone_interface_speed: forced 100gfull
     spanning_tree_priority: 4096
     spanning_tree_mode: mstp
+    overlay_address_families: [evpn, vpn-ipv4, vpn-ipv6]
     bgp_defaults:
       - 'no bgp default ipv4-unicast'
       - 'distance bgp 20 200 200'
